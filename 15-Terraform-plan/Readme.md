@@ -66,6 +66,10 @@ terraform show infra.plan
 **Description**: Outputs the execution plan in JSON format for programmatic processing or integration with other tools.
 
 **Purpose**: Useful for automation and custom tooling that processes the Terraform plan.
+**Usage**:
+```sh
+terraform show -json infra.plan
+```
 
 **Output**: A JSON representation of the execution plan is displayed.
 
@@ -77,7 +81,8 @@ terraform show infra.plan
 **Purpose**: Allows users to filter, search, or process the JSON output efficiently.
 
 **Usage**:
-
+```sh
 terraform show -json infra.plan | jq
+```
 
 **Output**: A formatted and readable JSON output, or filtered results based on the jq query provided.
