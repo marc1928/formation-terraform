@@ -12,7 +12,7 @@ terraform show infra.plan
 ```
 ***Optionally review the JSON format***
 ```sh
-terraform show -jsn infra.plan
+terraform show -json infra.plan | jq
 ```
 ***Apply the plan to provision infrastructure***
 ```sh
