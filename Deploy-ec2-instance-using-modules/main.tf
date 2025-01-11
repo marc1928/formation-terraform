@@ -16,8 +16,8 @@ module "sg" {
 # Lancer une instance EC2 avec le Security Group
 module "ec2_instance" {
   source            = "./modules/ec2_instance"
-  ami_id            = "ami-0c55b159cbfafe1f0" # Remplacez par une AMI de votre région
+  ami_id            = "ami-0c55b159cbfafe1f0" 
   instance_type     = "t2.micro"
-  subnet_id         = module.vpc.public_subnets[0] # Utilise le premier sous-réseau public
+  subnet_id         = module.vpc.public_subnets[0] 
   security_group_name = module.sg.sg_name
 }
